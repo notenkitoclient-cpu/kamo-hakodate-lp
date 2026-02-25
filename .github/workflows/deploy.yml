@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  deployments: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -32,4 +36,4 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: kamo-hako-lp
           directory: dist
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          gitHubToken: ''
