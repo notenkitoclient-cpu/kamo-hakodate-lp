@@ -319,7 +319,7 @@ a:hover {
 /* スマホ用調整 */
 @media screen and (max-width: 768px) {
     .main-visual-container {
-        height: 1000px;
+        height: 1100px;
         padding: 50px 15px 40px 15px;
     }
 
@@ -337,12 +337,13 @@ a:hover {
     }
 
     .hero-speaker-wrap {
-        top: 400px;
-        height: 550px;
+        top: 580px;
+        height: 520px;
     }
 
     .hero-cta-wrap {
-        bottom: 30px;
+        top: 50%;
+        bottom: auto;
     }
 
     .hero-cta-wrap img {
